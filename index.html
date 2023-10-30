@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #form-section {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 3rem;
+            padding: 3rem;
+
+
+        }
+
+        #inner-form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+
+        }
+
+        input {
+            margin: 0.5rem;
+        }
+
+        label {
+            margin: 0.5rem;
+        }
+
+        #btn {
+            height: 21px;
+            width: 100px;
+            text-align: center;
+            margin-left: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <section id="form-section">
+        <form id="inner-form" onsubmit="saveOnLocal(event)">
+            <div id="msg"></div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone">
+            <input type="submit" id="btn" value="submit">
+
+        </form>
+        <ul id="users">
+        </ul>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>
