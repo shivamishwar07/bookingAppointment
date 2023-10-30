@@ -15,8 +15,7 @@
 
         #form-section {
             width: 200px;
-            height: 200px;
-            background-color: aqua;
+            background-color: rgb(143, 171, 171);
             margin: 3rem;
             padding: 3rem;
 
@@ -56,15 +55,14 @@
     <section id="form-section">
         <form id="inner-form" onsubmit="saveOnLocal(event)">
             <div id="msg"></div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="phone">Phone</label>
-            <input type="text" name="phone" id="phone">
+            <label for="productName">Product Name:</label>
+            <input type="text" name="productName" id="productName">
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price">
             <input type="submit" id="btn" value="submit">
 
         </form>
+        <p id="totalPrice">Total Price: $0.00</p>
         <ul id="users">
         </ul>
     </section>
