@@ -85,7 +85,6 @@ function showOnDisplay(obj) {
         // axios.put(`https://crudcrud.com/api/ee054ef918684164a0f553fd205235f2/userData/${id}`)
         // .then((response) => {
         //     // showOnDisplay(response.data)
-        //     console.log(response);
 
         // })
         // .catch((err) => console.log(err))
